@@ -15,7 +15,6 @@ const App = () => {
 
     return (
       <LanContext.Provider value={lan}>
-            <LanContext.Consumer>{ (value)=>(
               <div className="container">
                   <div className='home-flags'>
                     <img src={en_icon} alt='en' onClick={()=>setLan('EN')}/>
@@ -24,7 +23,7 @@ const App = () => {
                   <Route exact path='/' render={(props)=><Home />} />
                   <Route exact path='/newNote' component={NewNote} />
               </div>
-            )}</LanContext.Consumer></LanContext.Provider>
+            </LanContext.Provider>
     );
 }
 

@@ -86,7 +86,8 @@ body {
     .newNote-box textarea {
       width: 60%;
       height: 15rem;
-      color: #85144b; }
+      color: #85144b;
+      font-size: 2rem; }
   .newNote-error {
     text-align: center;
     font-size: 2rem;
@@ -219,7 +220,8 @@ body {
       .modal-box-edit textarea {
         width: 60%;
         height: 15rem;
-        color: #85144b; }
+        color: #85144b;
+        font-size: 2rem; }
     .modal-box h3 {
       font-size: 4rem;
       border-bottom: 0.2rem solid #6d6d6d;
@@ -242,4 +244,5 @@ body {
     .modal-box textarea {
       width: 60%;
       height: 15rem;
-      color: #85144b; }
+      color: #85144b;
+      font-size: 2rem; }

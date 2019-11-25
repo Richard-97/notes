@@ -64,7 +64,6 @@ export default class Home extends Component {
         this.setState({ notes: data })
     }
     cancelModalWindow = () => {
-        console.log('cancel')
         this.setState({modal_note: null, showModal: false})
     }
     saveEditNote = async (title, desc, author, id) => {
