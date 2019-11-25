@@ -26,7 +26,9 @@ app.get('/notes', (req, res)=>{
     res.status(200).json(notes)
 })
 app.get('/notes/:id', (req, res)=>{
-    res.status(200).json(notes[0])
+    const id = req.params
+    console.log(id.id)
+    res.status(200).json(notes[Number(id.id)-1])
 })
 app.post('/notes', (req, res)=>{
     const {title, desc, author} = req.body;
