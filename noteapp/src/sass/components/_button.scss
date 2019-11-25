@@ -1,0 +1,12 @@
+.button{
+    background-color: $color-primary;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color:  $color-white;
+    cursor: pointer;
+    &:hover{
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+}

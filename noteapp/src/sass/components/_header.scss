@@ -1,0 +1,16 @@
+.header{
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-finder{
+        width: 37rem;
+        height: 4rem;
+        border-radius: 4rem;
+        padding-left: 4rem;
+        outline: none;
+        border:none;
+        background-color: $color-gray-light;
+    }
+}

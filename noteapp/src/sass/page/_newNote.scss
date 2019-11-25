@@ -1,0 +1,34 @@
+.newNote{
+    min-height: 100vh;
+    width: 100%;
+    padding: 20rem 15rem;
+    &-box{
+        height: 45rem;
+        width: 100%;
+        background-color: $color-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        input{
+            width: 25rem;
+            height: 5rem;
+            padding-left: 4rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 2rem;
+            outline: none;
+            color: $color-secondary;
+        }
+        textarea{
+            width: 60%;
+            height: 15rem;
+            color: $color-secondary;
+        }
+    }
+    &-error{
+        text-align: center;
+        font-size: 2rem;
+        color: red;
+    }
+}

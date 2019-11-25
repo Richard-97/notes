@@ -1,0 +1,75 @@
+.modal{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-box{
+        height: 60rem;
+        width: 50%;
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        &-edit{
+            height: 60rem;
+            width: 50%;
+            background-color: $color-white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            input{
+                width: 25rem;
+                height: 5rem;
+                padding-left: 4rem;
+                border: none;
+                border-radius: 1rem;
+                font-size: 2rem;
+                outline: none;
+                color: $color-secondary;
+                border: 0.2rem solid $color-gray-light;
+            }
+            textarea{
+                width: 60%;
+                height: 15rem;
+                color: $color-secondary;
+            }
+        }
+        h3{
+            font-size: 4rem;
+            border-bottom: 0.2rem solid $color-gray-dark;
+            width: 100%;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 3rem;
+            padding: 0 3rem;
+            
+        }
+        input{
+            width: 25rem;
+            height: 5rem;
+            padding-left: 4rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 2rem;
+            outline: none;
+            color: $color-secondary;
+            border: 0.2rem solid $color-gray-light;
+        }
+        textarea{
+            width: 60%;
+            height: 15rem;
+            color: $color-secondary;
+        }
+
+    }
+   
+}

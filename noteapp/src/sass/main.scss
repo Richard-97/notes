@@ -1,0 +1,16 @@
+@import './abstract/mixins';
+@import './abstract/variables';
+
+@import './base/base';
+
+//page
+@import './page/home';
+@import './page/newNote';
+
+
+//components
+@import './components/header';
+@import './components/button';
+@import './components/button2';
+@import './components/note';
+@import './components/modal';

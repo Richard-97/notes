@@ -1,0 +1,22 @@
+.home{
+    &-notes{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 16rem;
+    }
+    &-flags{
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        img{
+            height: 3rem;
+            width: auto;
+            cursor: pointer;
+            margin: 1rem 2rem;
+        }
+    }
+}
