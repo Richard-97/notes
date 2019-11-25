@@ -15,7 +15,7 @@ export default function Modal({ note, cancelModal, type }) {
                     <div className='modal-box'>
                         <h3>{value === 'EN'? 'Title: '+note.title : 'Název: '+note.title}</h3>
                         <p>{value === 'EN' ? 'Description: '+note.description : 'Popis: '+note.description}</p>
-                        <p>{value === 'EN' ? 'Author: '+note.description : 'Autor: '+note.description}</p>
+                        <p>{value === 'EN' ? 'Author: '+note.user : 'Autor: '+note.user}</p>
                         <div style={{display: 'flex', alignItems: 'center',justifyContent: 'center', width: '100%'}}>
                             <Button2 title='OK' onClick={cancelModal}/>
                         </div>

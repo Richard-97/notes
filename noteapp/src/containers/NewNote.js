@@ -12,11 +12,6 @@ export default class NewNote extends Component {
         lan: 'CZ'
     }
     createNewNote = async (title, author, desc) => {
-        if(title === '' || author === '' || desc === ''){
-            this.setState({ error: true })
-            return;
-        }
-        this.setState({error: false})
         await fetch('http://localhost:5000/notes', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -34,9 +29,13 @@ export default class NewNote extends Component {
                         <input type='text' placeholder={value === 'EN'?'title of new note':'název nové úlohy'} onChange={(e)=>this.setState({ title: e.target.value })} />
                         <input type='text' placeholder={value === 'EN'?'surname and lastname':'kstné jméno a příjmení'} onChange={(e)=>this.setState({ author: e.target.value })}/>
                         <textarea onChange={(e)=>this.setState({ desc: e.target.value })}/>
-                        <Button2 title={value === 'EN'?'Create':'vytvořit'} link='/' onClick={()=>this.createNewNote(this.state.title, this.state.author, this.state.desc)}/>
+                        {
+                            this.state.title === '' || this.state.author === '' || this.state.desc === '' ?
+                            <p className='newNote-error'>{value === 'EN'?'Fill all inputs': 'Vyplňte všechny údaje'}</p>
+                            :
+                            <Button2 title={value === 'EN'?'Create':'vytvořit'} link='/' onClick={()=>this.createNewNote(this.state.title, this.state.author, this.state.desc)}/>   
+                        }
                     </div>
-                    {this.state.error && <p className='newNote-error'>{value === 'EN'?'Fill all inputs': 'Vyplňte všechny údaje'}</p>}
                 </div>
             )}</LanContext.Consumer>
         )
