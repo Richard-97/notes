@@ -58,7 +58,8 @@ export default class Home extends Component {
 
             })
     }
-    async componentDidMount() {
+    
+    async componentWillMount() {
         const notes = await fetch('http://localhost:5000/notes');
         const data = await notes.json();
         this.setState({ notes: data })

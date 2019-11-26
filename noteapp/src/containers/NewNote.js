@@ -22,7 +22,6 @@ export default class NewNote extends Component {
     }
     render() {
         return (
-            
             <LanContext.Consumer>{ (value)=>(
                 <div className='newNote'>
                     <div className='newNote-box'>
